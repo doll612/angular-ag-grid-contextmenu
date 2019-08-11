@@ -1,0 +1,79 @@
+$body-bg-color: #FFFFFF; // White
+
+li {
+    list-style: none;
+}
+
+.modal-container {
+    left: 40px;
+    position: absolute;
+    z-index: 100000;
+
+    .modal-tip {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 20px;
+        width: 8px;
+        height: 4px;
+    }
+
+    // Speech bubble arrow positioning
+    .modal-tip-upward-arrow {
+        // background-image: url('../../../images/modal/menu_arrow_up.png');
+        top: -4px;
+    }
+
+    // Flipped speech bubble arrow positioning
+    .modal-tip-downward-arrow {
+        // background-image: url('../../../images/modal/menu_arrow_down.png');
+        bottom: -4px;
+        top: auto;
+    }
+
+    .left-container {
+        float: left;
+        padding: 15px 15px;
+        min-width: 110px;
+        margin-right: 5px;
+        margin-bottom: 0;
+        box-shadow: 1px 1px 2px #999999;
+        border: 1px solid #999999;
+        background-color: $body-bg-color;
+
+        li {
+            padding: 3px 0;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+  }
+  
+  .vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+  }
+  
+  .vertical-menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+  }

@@ -1,0 +1,11 @@
+<div class="container">
+  <ag-grid-angular 
+    style="width: 500px; height: 500px;" 
+    class="ag-theme-balham"
+    [rowData]="rowData" 
+    [columnDefs]="columnDefs"  rowSelection="multiple" (contextmenu)="onRightClick($event)" (cellContextMenu)="rightClick($event)">
+</ag-grid-angular>
+
+<div *ngIf="contextMenuView.show==true">
+  <app-context-menu [data]="contextMenuView"></app-context-menu>
+</div>
